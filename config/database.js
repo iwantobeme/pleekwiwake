@@ -4,7 +4,7 @@ const connection = mysql.createConnection({
   multipleStatements: true,
   host: "localhost",
   user: "root",
-  password: "5Em9b6h0NzWdJjq5git",
+  password: "",
   database: "webwat"
 });
 export default connection;
