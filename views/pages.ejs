@@ -1,15 +1,39 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-    
-  <h1><%= pages.title %></h1>  
-  
-  <p><%- pages.detail %></p>
-</body>
-</html>
+<%- include('layout_web/header2') %>
+<style>
+  .content{
+    width: 70%;
+    z-index: 2;
+  }
+</style>
+<div class="row">
+        <div class="col-9">
+          <h1 ><%- pages.title %></h1>
+          <div class="text mt-2">
+            <p><%- pages.detail %></p>
+          </div>
+        </div>
+  <div class="col-3">
+    <h4 class="mt-3">เจ้าอาวาสวัด</h4>
+    <p class="mt-3">ท่าพระครู ดร. ฐานี ฐิตวิริโย</p>
+    <img
+      src="https://scontent.fbkk4-1.fna.fbcdn.net/v/t1.0-9/67193276_238270390389666_1902637543959035904_n.jpg?_nc_cat=105&_nc_eui2=AeEc6wzRpazkH0A21uZN2WS9DuCPRpmGHqxmFgAa9FEaSdKwGYEc3ES3mynHfWNV3A4j06zEWH2924RNhA721B-bgjVF3KBliMrD39WkaN9eeA&_nc_oc=AQkGDOUMKK36BvYxr0LMRDg2eaSQuktb67mnIzjgOfAD3TycJxLEYDimQWKIJAiHW8Q&_nc_ht=scontent.fbkk4-1.fna&oh=7fa5d42b15959993a7a0c851964217b3&oe=5DB5F9D9"
+      alt="" class="w-100" />
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous"
+      src="https://connect.facebook.net/th_TH/sdk.js#xfbml=1&version=v3.3"></script>
+    <div class="fb-page w-100 mt-2"
+      data-href="https://web.facebook.com/%E0%B8%AA%E0%B8%96%E0%B8%B2%E0%B8%99%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%9B%E0%B8%A5%E0%B8%B5%E0%B8%81%E0%B8%A7%E0%B8%B4%E0%B9%80%E0%B8%A7%E0%B8%81-%E0%B8%AD%E0%B9%80%E0%B8%A7%E0%B8%B5%E0%B8%A2%E0%B8%87%E0%B9%81%E0%B8%AB%E0%B8%87-%E0%B8%88%E0%B9%80%E0%B8%8A%E0%B8%B5%E0%B8%A2%E0%B8%87%E0%B9%83%E0%B8%AB%E0%B8%A1%E0%B9%88-146598892072911/"
+      data-tabs="" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true"
+      data-hide-cover="false" data-show-facepile="true">
+      <blockquote
+        cite="https://web.facebook.com/%E0%B8%AA%E0%B8%96%E0%B8%B2%E0%B8%99%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%9B%E0%B8%A5%E0%B8%B5%E0%B8%81%E0%B8%A7%E0%B8%B4%E0%B9%80%E0%B8%A7%E0%B8%81-%E0%B8%AD%E0%B9%80%E0%B8%A7%E0%B8%B5%E0%B8%A2%E0%B8%87%E0%B9%81%E0%B8%AB%E0%B8%87-%E0%B8%88%E0%B9%80%E0%B8%8A%E0%B8%B5%E0%B8%A2%E0%B8%87%E0%B9%83%E0%B8%AB%E0%B8%A1%E0%B9%88-146598892072911/"
+        class="fb-xfbml-parse-ignore"><a
+          href="https://web.facebook.com/%E0%B8%AA%E0%B8%96%E0%B8%B2%E0%B8%99%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%9B%E0%B8%A5%E0%B8%B5%E0%B8%81%E0%B8%A7%E0%B8%B4%E0%B9%80%E0%B8%A7%E0%B8%81-%E0%B8%AD%E0%B9%80%E0%B8%A7%E0%B8%B5%E0%B8%A2%E0%B8%87%E0%B9%81%E0%B8%AB%E0%B8%87-%E0%B8%88%E0%B9%80%E0%B8%8A%E0%B8%B5%E0%B8%A2%E0%B8%87%E0%B9%83%E0%B8%AB%E0%B8%A1%E0%B9%88-146598892072911/">สถานธรรมปลีกวิเวก
+          อ.เวียงแหง จ.เชียงใหม่</a></blockquote>
+    </div>
+  </div>
+    </div>
+  </div>
+
+</div>
+<%- include('layout_web/footer2') %>

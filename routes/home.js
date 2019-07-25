@@ -63,7 +63,12 @@ router.get("/", function (req, res, next) {
 router.get('/show', (req, res) => {
   res.render("show");
 })
-
+router.get('/contact', (req, res) => {
+  res.render("contact");
+})
+router.get('/fungtest', (req, res) => {
+  res.render("fungtest");
+})
 router.get('/knowledge', (req, res) => {
   res.render("knowledge");
 })
