@@ -68,6 +68,7 @@ router.get('/knowledge', (req, res) => {
   res.render("knowledge");
 })
 
+
 router.get("/news/:id", (req, res, news) => {
   const { id } = req.params;
   const sql = `SELECT 
@@ -87,8 +88,36 @@ router.get("/news/:id", (req, res, news) => {
               
   connection.query(sql, [id], (error, result) => {
     if (error) return res.send(error.message);
-    res.json(result);
+    //res.json(result);
+    res.render('news', {news: result[0]})
   });
+
+
 });
+
+router.get("/pages/:id", (req, res, pages) => {
+  const { id } = req.params;
+  const sql = `SELECT 
+                pages.id, pages.title,
+                pages.thumbnail, pages.detail,
+                pages.created_at, pages.updated_at,
+                
+                
+                users.id AS users_id,
+                users.name AS user_name
+              FROM pages 
+              
+              INNER JOIN users ON pages.user_id = users.id
+              WHERE pages.id = ?`;
+
+connection.query(sql, [id], (error, result) => {
+  if (error) return res.send(error.message);
+  //res.json(result);
+  res.render('pages', {pages: result[0]})
+});
+
+});
+
+
 
 module.exports = router;
